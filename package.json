@@ -4,13 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-	"start": "webpack --config myAwesomeConfig.js"
+    "start": "webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "style-loader": "^0.21.0",
     "webpack": "^4.15.1",
     "webpack-cli": "^3.0.8"
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "uuid": "^3.3.2"
   }
 }
