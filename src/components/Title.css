@@ -1,5 +1,9 @@
-.Title {
+.heading,
+.counter {
   font-family: sans-serif;
   color: #222;
   text-align: center;
+}
+.counter {
+  font-weight: bold;
 }
