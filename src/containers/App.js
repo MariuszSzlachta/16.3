@@ -2,14 +2,33 @@ import React from 'react';
 import uuid from 'uuid';
 import style from './App.css';
 import Title from '../components/Title';
+import TodoList from '../components/TodoList';
+import TodoForm from '../components/TodoForm';
+import {hot} from 'react-hot-loader';
 
 class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      data: []
+      data: [
+        {
+          id: 1,
+          text: 'clean room'
+        },
+        {
+          id: 2,
+          text: 'wash the dishes'
+        },
+        {
+          id: 3,
+          text: 'feed my cat'
+        }
+      ]
     }
+    this.removeTodo = this.removeTodo.bind(this);
+    this.addTodo = this.addTodo.bind(this);
   }
+
 
   addTodo(val){
     const todo = {
@@ -33,9 +52,11 @@ class App extends React.Component {
     return (
       <div className={style.TodoApp}>
         <Title tasks={this.state.data.length} />
+        <TodoForm add={this.addTodo} />
+        <TodoList data={this.state.data} remove={this.removeTodo}/>
       </div>
     )
   }
 }
 
-export default App;
+export default hot(module)(App);

@@ -1,0 +1,32 @@
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+  font-family: sans-serif;
+}
+
+.form .form__label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.form .form__input {
+  display: block;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+}
+
+.form .form__button {
+  margin-top: 0.5em;
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+}

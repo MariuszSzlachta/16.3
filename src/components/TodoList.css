@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.TodoList {
+  font-family: sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5;
+  color: #222;
+  cursor: pointer;
+}
